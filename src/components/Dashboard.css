@@ -1,0 +1,215 @@
+.dashboard-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem 0;
+}
+
+.welcome-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.welcome-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header-content h4 {
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.header-content p {
+  color: #7f8c8d;
+  margin-bottom: 0;
+}
+
+.header-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-storage {
+  background: linear-gradient(45deg, #3498db, #2980b9);
+  border: none;
+  border-radius: 25px;
+  padding: 8px 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-storage:hover {
+  background: linear-gradient(45deg, #2980b9, #21618c);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+.btn-logout {
+  background: linear-gradient(45deg, #e74c3c, #c0392b);
+  border: none;
+  border-radius: 25px;
+  padding: 8px 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+  background: linear-gradient(45deg, #c0392b, #a93226);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+}
+
+.storage-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  margin-bottom: 2rem;
+}
+
+.storage-card .card-body {
+  padding: 1.5rem;
+}
+
+.storage-card h6 {
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.storage-card p {
+  color: #34495e;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.main-content {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  min-height: 500px;
+}
+
+.main-content .card-body {
+  padding: 0;
+}
+
+.nav-tabs {
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 15px 15px 0 0;
+  padding: 1rem;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  border-radius: 10px;
+  color: #7f8c8d;
+  font-weight: 500;
+  padding: 10px 20px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+  background: rgba(52, 152, 219, 0.1);
+  color: #3498db;
+}
+
+.nav-tabs .nav-link.active {
+  background: linear-gradient(45deg, #3498db, #2980b9);
+  color: white;
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+.tab-content {
+  padding: 2rem;
+}
+
+.tab-pane h5 {
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.tab-pane p {
+  color: #34495e;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.tab-pane strong {
+  color: #2c3e50;
+}
+
+.btn-primary-custom {
+  background: linear-gradient(45deg, #27ae60, #229954);
+  border: none;
+  border-radius: 25px;
+  padding: 10px 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  background: linear-gradient(45deg, #229954, #1e8449);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(39, 174, 96, 0.3);
+}
+
+.user-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.info-item {
+  background: rgba(52, 152, 219, 0.05);
+  padding: 1rem;
+  border-radius: 10px;
+  border-left: 4px solid #3498db;
+}
+
+.info-item strong {
+  display: block;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.info-item span {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .header-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .header-actions button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "routing-app2",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^9.0.0",
+    "@mui/lab": "^9.0.0-beta.2",
+    "@mui/material": "^9.0.0",
+    "@mui/x-data-grid": "^9.0.4",
+    "@mui/x-date-pickers": "^9.1.0",
+    "axios": "^1.16.0",
+    "bootstrap": "^5.3.8",
+    "date-fns": "^4.1.0",
+    "dayjs": "^1.11.20",
+    "jwt-decode": "^4.0.0",
+    "react": "^19.2.4",
+    "react-bootstrap": "^2.10.10",
+    "react-datepicker": "^9.1.0",
+    "react-dom": "^19.2.4",
+    "react-toastify": "^11.1.0",
+    "styled-components": "^6.3.12"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^9.39.4",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.4.0",
+    "react-router-dom": "^7.15.0",
+    "vite": "^8.0.1"
+  }
+}
