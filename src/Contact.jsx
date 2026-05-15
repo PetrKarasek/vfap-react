@@ -71,7 +71,7 @@ const Contact = () => {
               <Grid item xs={12} sm={6}><TextField fullWidth label="Jméno" variant="outlined" required /></Grid>
               <Grid item xs={12} sm={6}><TextField fullWidth label="Email" type="email" variant="outlined" required /></Grid>
               
-              {/* ZDE JE PŘIDANÝ DATEPICKER */}
+              {/* Přidaný DatePicker */}
               <Grid item xs={12}>
                 <LocalizationProvider dateAdapter={AdapterDayjs}>
                   <DatePicker 
@@ -95,7 +95,7 @@ const Contact = () => {
         </Card>
       </Container>
 
-      {/* ZDE JE NAPOJENÝ TVŮJ SNACKBAR */}
+      {/* Napojený Snackbar */}
       <NotificationSnackbar 
         open={snackbarOpen} 
         message="Zpráva byla úspěšně odeslána!" 

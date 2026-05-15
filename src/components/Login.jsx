@@ -12,7 +12,7 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault(); // Zabrání znovunačtení stránky
 
-    // Náš mockovaný (falešný) login
+    // Mockovaný (falešný) login
     if (email === 'admin@test.cz' && password === 'heslo') {
       
       // 1. Vygenerování falešného JWT token

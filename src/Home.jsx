@@ -7,7 +7,7 @@ import TableChartIcon from '@mui/icons-material/TableChart';
 import './Home.css';
 
 const Home = () => {
-  const navigate = useNavigate(); // <-- ZDE JE PŘIDANÁ INICIALIZACE NAVIGACE
+  const navigate = useNavigate();
 
   return (
     <Box>
@@ -42,7 +42,7 @@ const Home = () => {
                 variant="contained" 
                 startIcon={<GroupIcon />}
                 sx={{ borderRadius: 2, px: 3 }}
-                onClick={() => navigate('/login')} // <-- ZDE JE PŘIDANÁ AKCE PRO KLIKNUTÍ
+                onClick={() => navigate('/login')}
               >
                 Zjistit více
               </Button>
@@ -51,13 +51,13 @@ const Home = () => {
         </Box>
       </Box>
 
-      {/* Spodní sekce s trojicí karet - Ultimátní Flexbox řešení */}
+      {/* Spodní sekce s trojicí karet */}
       <Container maxWidth="lg" sx={{ mt: 15, mb: 8 }}>
         <Box 
           sx={{ 
             display: 'flex', 
-            flexDirection: 'row', // Zásadní: Donutí karty být vedle sebe
-            gap: 4, // Mezera mezi kartami (nahrazuje spacing z Gridu)
+            flexDirection: 'row', // Donutí karty být vedle sebe
+            gap: 4, // Mezera mezi kartami
             justifyContent: 'center'
           }}
         >

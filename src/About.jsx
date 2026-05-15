@@ -3,7 +3,7 @@ import { Box, Typography, Card, CardContent, Container } from '@mui/material';
 import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
 import SpeedIcon from '@mui/icons-material/Speed';
 import SecurityIcon from '@mui/icons-material/Security';
-import './Home.css'; // Importujeme stejné styly!
+import './Home.css';
 
 const About = () => {
   return (

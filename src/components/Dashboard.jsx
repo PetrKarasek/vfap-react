@@ -4,7 +4,6 @@ import {
   TextField, Button, Snackbar, Alert 
 } from '@mui/material';
 
-// TADY CHYBĚLY TYTO IMPORTY PRO KALENDÁŘ:
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
