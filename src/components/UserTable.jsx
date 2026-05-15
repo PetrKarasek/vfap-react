@@ -32,18 +32,18 @@ const UserTable = () => {
   const fetchUsers = async () => {
     try {
       setLoading(true);
-      // 1. Zkusíme načíst data z localStorage
+      // Načtení z localStorage
       const savedUsers = localStorage.getItem('localUsers');
       
       if (savedUsers) {
-        // Pokud data existují v paměti, použijeme je
+        // Použití dat z paměti
         setUsers(JSON.parse(savedUsers));
       } else {
-        // 2. Pokud je paměť prázdná, stáhneme data z Apiary
+        // Pokud je paměť prázdná, stáhneme data z Apiary
         const response = await userService.getUsers(); 
         const initialData = response.data || [];
         setUsers(initialData);
-        // A rovnou si je uložíme do paměti pro příště
+        // Uložení do paměti pro příště
         localStorage.setItem('localUsers', JSON.stringify(initialData));
       }
     } catch (error) {
@@ -56,9 +56,9 @@ const UserTable = () => {
   const handleDelete = async (id) => {
     if (window.confirm('Are you sure you want to delete this user?')) {
       try {
-        await userService.deleteUser(id); // Stále voláme API pro splnění zadání
+        await userService.deleteUser(id); // Voláni API
         
-        // Zaktualizujeme lokální stav i localStorage
+        // Aktualizace lokálního stavu i localStorage
         const updatedUsers = users.filter(user => user.id !== id);
         setUsers(updatedUsers);
         localStorage.setItem('localUsers', JSON.stringify(updatedUsers));

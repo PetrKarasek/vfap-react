@@ -1,9 +1,8 @@
 import React from 'react';
 import { Container } from '@mui/material';
 import styled from 'styled-components';
-import boatImage from '../assets/image.jpg'; // Zkontroluj, zda tato cesta sedí!
+import boatImage from '../assets/image.jpg';
 
-// Vytvoříme sémantickou komponentu
 const HeroWrapper = styled.header`
   /* Sloučení ztmavení a obrázku do jedné vlastnosti */
   background: linear-gradient(

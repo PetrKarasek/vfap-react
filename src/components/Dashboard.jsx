@@ -8,7 +8,7 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 
-// Import tvojí tabulky
+// Import tabulky
 import UserTable from './UserTable'; 
 
 // Pomocná komponenta pro obsah záložek
@@ -63,7 +63,7 @@ const Dashboard = () => {
           </Tabs>
         </Box>
 
-        {/* TAB 1: Tabulka uživatelů */}
+        {/* Tabulka uživatelů */}
         <CustomTabPanel value={tabValue} index={0}>
           <Typography variant="h6" gutterBottom color="text.secondary">
             Přehled všech registrovaných uživatelů v systému
@@ -71,7 +71,7 @@ const Dashboard = () => {
           <UserTable /> 
         </CustomTabPanel>
 
-        {/* TAB 2: Kontaktní formulář */}
+        {/* Kontaktní formulář */}
         <CustomTabPanel value={tabValue} index={1}>
           <Container maxWidth="sm" sx={{ mt: 2 }}>
             <Typography variant="h5" gutterBottom>

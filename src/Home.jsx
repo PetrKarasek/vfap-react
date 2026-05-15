@@ -11,14 +11,12 @@ const Home = () => {
 
   return (
     <Box>
-      {/* Hero sekce s přechodem do modré */}
       <Box className="hero-section">
-        {/* Malý text v modré ploše */}
         <Typography className="subtitle-text">
           Správa úkolů jednoduše a efektivně
         </Typography>
 
-        {/* Bílé plovoucí okno posunuté nahoru */}
+        {/* Bílé plovoucí okno */}
         <Box className="floating-card-wrapper">
           <Card className="info-card">
             <CardContent sx={{ p: 4 }}>
@@ -56,8 +54,8 @@ const Home = () => {
         <Box 
           sx={{ 
             display: 'flex', 
-            flexDirection: 'row', // Donutí karty být vedle sebe
-            gap: 4, // Mezera mezi kartami
+            flexDirection: 'row',
+            gap: 4,
             justifyContent: 'center'
           }}
         >

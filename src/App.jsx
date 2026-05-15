@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Box, CssBaseline } from '@mui/material'; // <-- Přidán CssBaseline
+import { Box, CssBaseline } from '@mui/material';
 
 import NavigationBar from './components/NavigationBar'; 
 import Home from './Home';

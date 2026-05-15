@@ -11,20 +11,18 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 
-// Import tvého Snackbaru (cesta podle tvého screenshotu)
+// Import tvého Snackbaru
 import NotificationSnackbar from './components/NotificationSnackbar';
 
 const Contact = () => {
-  // State pro Snackbar
   const [snackbarOpen, setSnackbarOpen] = useState(false);
-  // State pro Datepicker
   const [selectedDate, setSelectedDate] = useState(null);
 
   // Funkce po kliknutí na odeslat
   const handleSubmit = (e) => {
     e.preventDefault();
     // Zde by normálně proběhlo odeslání dat na API
-    setSnackbarOpen(true); //Zobrazí snackbar
+    setSnackbarOpen(true);
   };
 
   return (
@@ -47,7 +45,6 @@ const Contact = () => {
         <Box sx={{ mb: 6 }}>
           <Typography variant="h5" fontWeight="bold" gutterBottom sx={{ mb: 4 }}>Naše kontakty</Typography>
           <Box sx={{ display: 'flex', flexDirection: 'row', gap: 4, flexWrap: 'wrap', justifyContent: 'space-between' }}>
-            {/* Zkráceno pro přehlednost - zde jsou tvé ikony z předchozího kódu */}
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
               <Box sx={{ bgcolor: '#e3f2fd', p: 1.5, borderRadius: 2, display: 'flex', mr: 2, color: 'primary.main' }}><EmailIcon /></Box>
               <Box><Typography variant="body2" color="text.secondary">Email</Typography><Typography variant="body1" fontWeight="bold">info@react-vfap.cz</Typography></Box>
@@ -71,7 +68,7 @@ const Contact = () => {
               <Grid item xs={12} sm={6}><TextField fullWidth label="Jméno" variant="outlined" required /></Grid>
               <Grid item xs={12} sm={6}><TextField fullWidth label="Email" type="email" variant="outlined" required /></Grid>
               
-              {/* Přidaný DatePicker */}
+              {/* DatePicker */}
               <Grid item xs={12}>
                 <LocalizationProvider dateAdapter={AdapterDayjs}>
                   <DatePicker 
@@ -79,7 +76,7 @@ const Contact = () => {
                     value={selectedDate}
                     onChange={(newValue) => setSelectedDate(newValue)}
                     sx={{ width: '100%' }}
-                    disableFuture
+                    disablePast
                   />
                 </LocalizationProvider>
               </Grid>
@@ -95,7 +92,7 @@ const Contact = () => {
         </Card>
       </Container>
 
-      {/* Napojený Snackbar */}
+      {/* Snackbar */}
       <NotificationSnackbar 
         open={snackbarOpen} 
         message="Zpráva byla úspěšně odeslána!" 

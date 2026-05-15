@@ -1,19 +1,16 @@
-/* Home.css - Aktualizováno pro lokální obrázek */
-
 .hero-section {
   position: relative;
-  height: 450px; /* Výška modrého banneru */
+  height: 450px;
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* Obsah (okno) bude vpravo */
+  justify-content: flex-end;
   padding: 0 10%;
   
-  /* Kombinace Gradientu a tvého lokálního obrázku */
   background: linear-gradient(
     90deg, 
-    rgba(255, 255, 255, 0) 0%, /* Průhledná na začátku (vidíme fotku čistě) */
-    rgba(21, 101, 192, 0.8) 40%, /* Uprostřed začíná modrá barva ztmavovat fotku */
-    rgba(21, 101, 192, 1) 70% /* Vpravo už je jen plná modrá plocha */
+    rgba(255, 255, 255, 0) 0%,
+    rgba(21, 101, 192, 0.8) 40%,
+    rgba(21, 101, 192, 1) 70%
   ), 
  
   url('/src/assets/image.jpg'); 
@@ -26,7 +23,6 @@
 .floating-card-wrapper {
   width: 100%;
   max-width: 500px;
-  /* Toto posune okno nahoru tak, aby "přečuhovalo" nad modrý banner */
   margin-top: -40px; 
   z-index: 10;
 }
@@ -43,6 +39,6 @@
   text-align: right;
   width: 100%;
   position: absolute;
-  top: 60px; /* Umístění nápisu "Správa úkolů..." */
+  top: 60px;
   right: 10%;
 }
