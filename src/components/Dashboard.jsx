@@ -97,7 +97,7 @@ const Dashboard = () => {
                   <DatePicker 
                     label="Kdy se problém vyskytl? (volitelné)"
                     sx={{ width: '100%' }}
-                    disablePast
+                    disableFuture
                   />
                 </LocalizationProvider>
               </Box>
